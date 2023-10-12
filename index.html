@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-CODSOFT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <header>
+        <div class="img">
+            <a href="#"><img src="logo.png" alt=""></a>
+        </div>
+        <div>
+            <ul id="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume CV</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-outdent"></i>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-bio">
+            <h2>Hello,</h2>
+            <h4>I'm Allah <span>Dino</span></h4>
+            <p>I am Front-End Developer</p>
+            <button onclick="window.location.href='#contact';" class="normal">Contact Me</button>
+        </div>
+        <div class="hero-img">
+            <img src="p1.png" alt="">
+        </div>
+
+    </section>
+
+    <section id="about">
+        <div class="about-img">
+            <img src="about.png" alt="">
+        </div>
+        <div class="about-intro">
+            <h2>About Me</h2>
+            <p>Front-end developer with 2+ years of experience building and maintaining high-traffic web applications.
+                Proven ability to use HTML5, CSS3, JavaScript, Bootstrap, and React JS to create user-friendly and
+                visually appealing interfaces. Expertise in modern front-end development best practices. Passionate
+                about building innovative and engaging web experiences.</p>
+            <div>
+                <i class="fa-brands fa-facebook icons"></i>
+                <i class="fa-brands fa-twitter icons"></i>
+                <i class="fa-brands fa-instagram icons"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;">90%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">CSS3</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;">90%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;">75%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">BootStrap</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;">70%</div>
+                </div>
+            </li>
+            <li>
+                <span class="skill-name">React JS</span>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%;">56%%</div>
+                </div>
+            </li>
+
+
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Front-end developer with 2+ years of experience building and maintaining high-traffic web applications.
+            Proven ability to use HTML5, CSS3, JavaScript, Bootstrap, and React JS to create user-friendly and
+            visually appealing interfaces. Expertise in modern front-end development best practices. Passionate
+            about building innovative and engaging web experiences.</p>
+        <div class="all-projects">
+            <div class="project">
+                <img src="Project1.PNG" alt="Project 1">
+                <br><br>
+                <a class="normal" href="https://allahdino123.github.io/Personal_portfolio/">Personal Portfolio</a>
+                <br>
+                <p>Designed and
+                    developed a personal portfolio
+                    website showcasing projects,
+                    skills, and resumes</p>
+            </div>
+            <div class="project">
+                <img src="Project2.PNG" alt="Project 1">
+                <br><br>
+                <a class="normal" href="https://allahdino123.github.io/Ecommerce/">E-Commerce</a>
+                <br>
+                <p>Created a
+                    responsive e-commerce site
+                    with a shopping cart and
+                    payment gateway integration</p>
+            </div>
+            <div class="project">
+                <img src="Project3.PNG" alt="Project 1">
+                <br> <br>
+                <a class="normal" href="https://allahdino123.github.io/LearningManagementSystem/">Learning Management
+                    System</a>
+                <br>
+                <p>Developed an
+                    online platform for course
+                    management and student
+                    progress tracking.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <p>Welcome to my resume section. I'm excited to share my professional background and experiences with you. In my
+            resume, you'll find a detailed overview of my education, work history, skills, and achievements. Feel free
+            to download and explore my resume to learn more about my qualifications. If you have any questions or
+            opportunities for collaboration, don't hesitate to get in touch.</p>
+
+        <button class="normal"><a href="AllahDinoCv.pdf.pdf" download>Download Resume</a></button>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: allahdino.devloper@gmail.com.com</p>
+        <p>Phone: 03490396533</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Allah Dino</p>
+        <ul>
+            <li><a href="www.linkedin.com/in/allahdino6583">LinkedIn</a></li>
+            <li><a href="https://github.com/Allahdino123">GitHub</a></li>
+
+        </ul>
+    </footer>
+
+    <script>
+        const bar = document.getElementById('bar');
+        const close = document.getElementById('close');
+        const nav = document.getElementById('navbar');
+
+        if (bar) {
+            bar.addEventListener('click', () => {
+                nav.classList.add('active');
+            })
+        }
+
+        if (close) {
+            close.addEventListener('click', () => {
+                nav.classList.remove('active');
+            })
+        }
+    </script>
+</body>
+
+</html>
